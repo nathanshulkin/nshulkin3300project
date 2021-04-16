@@ -2,8 +2,8 @@ Rails.application.routes.draw do
 
   resources :posts
 
-  get 'posts/new'
-  root to: 'posts#new'
+  # get 'posts/new'
+  root to: 'posts#index'
 
   # posts GET    /posts(.:format)          # postsindex
   #root to: 'pages#main'
