@@ -5,8 +5,8 @@ Rails.application.routes.draw do
   get 'welcome/index'
   root to: 'welcome#index'
 
-  get 'post/new'
-  root to: 'post#new'
+  get 'posts/new'
+  root to: 'posts#new'
 
   #root to: 'pages#main'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
