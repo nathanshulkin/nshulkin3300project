@@ -4,6 +4,7 @@ class PostsController < ApplicationController
     end
     
     def new
+        @post = Post.new
     end
 
     def create
@@ -11,6 +12,15 @@ class PostsController < ApplicationController
  
         @post.save
         redirect_to @post
+    end
+
+    def destroy
+        @post = Post.find(params[:id])
+        @post.destroy
+        respond_to do |format|
+            format.html { redirect_to posts_url, notice: "project succesfully eliminated" }
+            format.json { head :no_content }
+        end
     end
  
     def show
