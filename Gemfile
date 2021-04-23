@@ -75,4 +75,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # autoprefixer and nodejs for travis
 gem "autoprefixer-rails"
-gem 'nodejs-rails', '~> 0.0.1'
+
+gem 'mini_racer'
