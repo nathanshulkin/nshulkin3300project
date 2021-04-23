@@ -1,6 +1,30 @@
 {
   "RSpec": {
     "coverage": {
+      "/root/nshulkin3300project/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/root/nshulkin3300project/app/helpers/post_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/root/nshulkin3300project/app/helpers/posts_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/root/nshulkin3300project/app/helpers/welcome_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/root/nshulkin3300project/app/controllers/posts_controller.rb": {
         "lines": [
           1,
@@ -66,7 +90,6 @@
         "lines": [
           1,
           1,
-          null,
           null
         ]
       },
@@ -115,38 +138,6 @@
         "branches": {
         }
       },
-      "/root/nshulkin3300project/app/helpers/application_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/root/nshulkin3300project/app/helpers/posts_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/root/nshulkin3300project/app/helpers/post_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/root/nshulkin3300project/app/helpers/welcome_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/root/nshulkin3300project/app/controllers/welcome_controller.rb": {
         "lines": [
           0,
@@ -158,6 +149,6 @@
         }
       }
     },
-    "timestamp": 1619145280
+    "timestamp": 1619197575
   }
 }
