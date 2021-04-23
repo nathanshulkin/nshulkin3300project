@@ -31,4 +31,5 @@ RSpec.describe Post, type: :model do
       expect(Post.count).to eq(3)
     end
   end
+
 end

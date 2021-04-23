@@ -19,6 +19,7 @@ RSpec.feature "Posts", type: :feature do
       click_button "Create Post"
       expect(page).to have_content("Text can't be blank")
     end
+
   end
 
   context "Update Post" do
@@ -41,6 +42,14 @@ RSpec.feature "Posts", type: :feature do
       end
       click_button "Update Post"
       expect(page).to have_content("Text can't be blank")
+    end
+
+    scenario "should fail" do
+      within("form") do
+        fill_in "Title", with: ""
+      end
+      click_button "Update Post"
+      expect(page).to have_content("Title can't be blank")
     end
   end
 
