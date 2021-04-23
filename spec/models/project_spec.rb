@@ -13,13 +13,14 @@ RSpec.describe Post, type: :model do
     end
     
     it "should be able to save project" do
-      project = Post.new(title: "Title", description: "Some description content goes here")
+      project = Post.new(title: "Title", text: "Some description content goes here")
       expect(project.save).to eq(true)
     end
   end
+  
 
   context "scopes tests" do
-    let(:params) { { title: "Title", description: "some description" } }
+    let(:params) { { title: "Title", text: "some description" } }
     before(:each) do
       Post.create(params)
       Post.create(params)
