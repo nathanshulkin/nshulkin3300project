@@ -16,7 +16,14 @@ RSpec.describe Post, type: :model do
       project = Post.new(title: "Title", text: "Some description content goes here")
       expect(project.save).to eq(true)
     end
+
+    it "should ask before deleting project" do
+      project = Post.new(title: "Title", text: "Some description content goes here")
+      project.delete
+      expect(project.valid?).to eq(true)
+    end
   end
+
   
 
   context "scopes tests" do
