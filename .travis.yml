@@ -13,6 +13,6 @@ script:
 
   deploy:
   provider: heroku
-  api_key: YOUT_ACCOUNT_API_HERE
-  app: YOUR_APP_NAME_HERE
+  api_key: 95034325-94cc-4380-a53d-8d272def4ebe
+  app: stormy-mesa-33065
   run: "rake db:migrate"
