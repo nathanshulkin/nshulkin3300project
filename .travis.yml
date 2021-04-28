@@ -11,7 +11,7 @@ before_install:
 script:
  - bundle exec rspec
 
-  deploy:
+deploy:
   provider: heroku
   api_key: 95034325-94cc-4380-a53d-8d272def4ebe
   app: stormy-mesa-33065
