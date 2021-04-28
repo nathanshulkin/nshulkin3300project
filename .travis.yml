@@ -17,5 +17,6 @@ deploy:
   api_key: 95034325-94cc-4380-a53d-8d272def4ebe
   app: stormy-mesa-33065
   run: "rake db:migrate"
+  run: "git push heroku main"
   on:
     branch: main
