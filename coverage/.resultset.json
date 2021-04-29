@@ -45,50 +45,50 @@
       "/root/nshulkin3300project/app/controllers/posts_controller.rb": {
         "lines": [
           1,
-          1,
-          null,
-          1,
-          0,
-          null,
           null,
           null,
           1,
-          0,
-          0,
-          null,
-          null,
-          1,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
+          4,
           null,
           null,
           null,
           1,
-          0,
+          2,
+          2,
           null,
           null,
           1,
-          0,
+          2,
           null,
-          0,
-          0,
+          2,
+          1,
           null,
-          0,
+          1,
           null,
           null,
           null,
           1,
-          0,
-          0,
-          0,
+          3,
           null,
           null,
           1,
-          0,
+          3,
+          null,
+          3,
+          1,
+          null,
+          2,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          3,
           null,
           null,
           1,
@@ -104,6 +104,13 @@
           1,
           null,
           null,
+          null
+        ]
+      },
+      "/root/nshulkin3300project/app/models/post.rb": {
+        "lines": [
+          1,
+          1,
           null
         ]
       },
@@ -154,17 +161,8 @@
         ],
         "branches": {
         }
-      },
-      "/root/nshulkin3300project/app/models/post.rb": {
-        "lines": [
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
       }
     },
-    "timestamp": 1619719949
+    "timestamp": 1619720933
   }
 }
