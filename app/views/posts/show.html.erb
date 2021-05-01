@@ -10,4 +10,7 @@
 
 <%= link_to "all the posts", controller: "posts" %> 
 
-<%= link_to 'Edit', edit_post_path(@post) %>
+<% if user_signed_in? %>
+<td><%= link_to "Edit", edit_post_path(@post) %></td>
+<td><%= link_to "Eliminate", post_path(@post), method: "delete", data: { confirm: 'Are you sure?' } %></td>
+<% end %>

@@ -56,7 +56,7 @@ RSpec.feature "Posts", type: :feature do
   context "Remove existing project" do
     let!(:post) { Post.create(title: "Test title", text: "Test content") }
     scenario "remove project" do
-      visit posts_path
+      visit edit_post_path(post)
       click_link "Eliminate"
       expect(Post.count).to eq(0)
     end

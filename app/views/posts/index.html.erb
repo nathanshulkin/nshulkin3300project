@@ -1,7 +1,14 @@
 <h1>all The Small posts</h1>
 <%= link_to "all the posts", controller: "posts" %> 
 
-<%= link_to 'New post', new_post_path %>
+<% if user_signed_in? %>
+  Logged in as <strong><%= current_user.email %></strong>.
+  <%= link_to 'New post', new_post_path %>
+  <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+<% else %>
+  <%= link_to 'Sign Up', new_user_registration_path %>
+  <%= link_to 'Login', new_user_session_path %>
+<% end %>
 
 <table>
   <tr>
@@ -13,8 +20,10 @@
     <tr>
       <td><%= link_to post.title, post_path(post) %></td>
       <td><%= post.text %></td>
-      <td><%= link_to "Edit", edit_post_path(post) %></td>
-      <td><%= link_to "Eliminate", post_path(post), method: "delete", data: { confirm: 'Are you sure?' } %></td>
+      <% if user_signed_in? %>
+        <td><%= link_to "Edit", edit_post_path(post) %></td>
+        <td><%= link_to "Eliminate", post_path(post), method: "delete", data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
 
     </tr>
   <% end %>
