@@ -7,11 +7,21 @@ body
     text-align: center;
 }
 
-container
+.container
 {
     margin: auto;
-    color: blueviolet;
+    text-align: center;
 }
+
+.jumbotron
+{
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #333333;
+    border-radius: .3rem;
+}
+
+
 
 h1 
 {
@@ -21,11 +31,20 @@ h1
     align-content: center;
     background-color: black;
     width: fit-content;
+    padding: 10px;
+    border-radius: 25px 0px 25px 0px;
 }
 
-h4
+h7, h4, h2
 {
+    display: block;
     color: #f0fff0;
+    text-shadow: black;
+}
+
+h3
+{
+    color: whitesmoke;
 }
 
 table
@@ -40,12 +59,15 @@ tr
 {
     display: inline-flex;
     margin: 10px;
-    //background-color: whitesmoke;
+    background-color: #f0fff0;
+    border-radius: 0px 0px 25px 25px;
+    padding: 20px;
+    margin: 10px;
 }
 
 td
 {
-    background-color: cadetblue;
+    background-color: black;
     margin: auto;
     width: auto;
     border-radius: 10px;
@@ -55,18 +77,10 @@ td
 
 p
 {
-    color: green;
+    color: whitesmoke;
 }
 
-a
-{
-    color: green;
-}
 
-h7
-{
-    display: block;
-}
 // Custom bootstrap variables must be set or imported *before* bootstrap.
  @import "bootstrap";
  
