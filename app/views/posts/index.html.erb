@@ -1,10 +1,13 @@
-<h1>nathan shulkins Portfolio</h1>
+<container>
+<h1>nathan shulkin Portfolio</h1>
 
 <h4>Welcome to nathans Portfolio website. This site lists different projects I have worked
 on and gives a brief description of each project. You can click on each project to learn more.</h4>
 
 <h4>Thank you for visiting. Have a nice day.</h4>
+</container>
 
+<contiainer>
 <%= link_to "all the posts", controller: "posts" %> 
 <% if user_signed_in? %>
   Logged in as <strong><%= current_user.email %></strong>.
@@ -19,11 +22,7 @@ on and gives a brief description of each project. You can click on each project 
 <h2>Projects:</h2>
 
 <table>
-  <tr>
-    <th></th>
-    <th></th>
-  </tr>
- 
+
   <% @posts.each do |post| %>
     <tr>
       <td><%= link_to post.title, post_path(post) %></td>
@@ -37,6 +36,10 @@ on and gives a brief description of each project. You can click on each project 
   <% end %>
 </table>
 
+</container>
+
+<container>
 <br></br>
 <br></br>
 <h7>lil bottom ticker for ya</h7>
+</container>

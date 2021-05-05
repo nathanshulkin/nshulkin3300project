@@ -1,13 +1,13 @@
-<p>
-  <strong>Title:</strong>
+<h1>
   <%= @post.title %>
-</p>
+</h1>
  
 <p>
-  <strong>Text:</strong>
+  <strong>description:</strong>
   <%= @post.text %>
 </p>
 
+<br>
 <%= link_to "all the posts", controller: "posts" %> 
 
 <% if user_signed_in? %>
