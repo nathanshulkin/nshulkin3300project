@@ -1,3 +1,39 @@
- // Custom bootstrap variables must be set or imported *before* bootstrap.
+
+$body-bg: #343a40;
+$body-color: #fff;
+
+h1 
+{
+    margin-right: auto;
+    margin-left: auto;
+    color: #f0f0f0;
+    align-content: center;
+}
+
+h4
+{
+    color: gray;
+}
+
+table
+{
+    color: yellow;
+}
+
+p
+{
+    color: green;
+}
+
+a
+{
+    color: green;
+}
+
+h7
+{
+    display: block;
+}
+// Custom bootstrap variables must be set or imported *before* bootstrap.
  @import "bootstrap";
  
