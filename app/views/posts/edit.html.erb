@@ -1,11 +1,29 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <div class="contiainer">
+    <%= link_to "all the projects", controller: "posts" %> 
+    <% if user_signed_in? %>
+      Logged in as <strong><%= current_user.email %></strong>.
+      <%= link_to 'New post', new_post_path %>
+      <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+    <% else %>
+      <%= link_to 'Sign Up', new_user_registration_path %>
+      <%= link_to 'Login', new_user_session_path %>
+    <% end %>
+  </div>
+</nav>
+
+<div class="jumbotron">
 <h1>edit Post</h1>
- 
+</div>
+
+<div>
 <%= render 'form' %>
 
 <td><%= link_to "Eliminate", post_path(@post), method: "delete", data: { confirm: 'Are you sure?' } %></td>
  
 <%= link_to 'Cancel', posts_path %>
+</div>
 
-<br></br>
-<br></br>
-<h7>lil bottom ticker for ya</h7>
+<div class="ticker">
+<%= render 'ticker' %>
+</div>
